@@ -28,7 +28,7 @@ public class TasksLifeCycleTest extends BaseTestWithScreenshots {
         assertItemsLeft(3);
 
         refresh();
-        sleep(1000);
+        sleep(4000);
 
         openActive();
         Assert.assertEquals(url(), "https://todomvc4tasj.herokuapp.com/#/active");

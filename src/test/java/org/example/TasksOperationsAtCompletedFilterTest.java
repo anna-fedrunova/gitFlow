@@ -14,13 +14,4 @@ public class TasksOperationsAtCompletedFilterTest {
         openActive();
         assertVisibleTasksAre("1", "2");
     }
-
-    @Test
-    public void addTest() {
-        add("1");
-        tasks.findBy(visible).shouldBe(empty);
-        assertItemsLeft(1);
-        openActive();
-        assertVisibleTasksAre("1");
-    }
 }

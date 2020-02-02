@@ -43,7 +43,7 @@ public class TasksLifeCycleTest extends BaseTestWithScreenshots {
         assertItemsLeft(2);
 
         refresh();
-        sleep(1000);
+        //sleep(1000);
 
         toggleAll();
         tasks.filter(visible).shouldBe(empty);

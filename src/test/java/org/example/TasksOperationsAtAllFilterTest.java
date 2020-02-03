@@ -38,4 +38,12 @@ public class TasksOperationsAtAllFilterTest extends BaseTestWithScreenshots {
         assertTasksAre("1", "2", "3");
         assertItemsLeft(3);
     }
+
+
+    @Test
+    public void toggleAllTest () {
+        given("1", "2", "3");
+        toggleAll();
+        assertItemsLeft(0);
+    }
 }

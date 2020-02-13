@@ -20,6 +20,7 @@ public class TasksOperationsAtAllFilterTest extends BaseTestWithScreenshots {
         edit("2", " edited");
         assertTasksAre("1", "2 edited", "3");
         assertItemsLeft(3);
+        sleep(2000);
     }
 
     @Test

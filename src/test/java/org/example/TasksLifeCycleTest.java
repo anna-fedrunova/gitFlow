@@ -21,7 +21,7 @@ public class TasksLifeCycleTest extends BaseTestWithScreenshots {
     public void smokeToDoMVC () {
 
         add("1", "2", "3", "4");
-        assertTasksAre("1", "2", "3", "4");
+        assertTasksAre("1", "2", "3");
         assertItemsLeft(4);
 
         toggle("2");
